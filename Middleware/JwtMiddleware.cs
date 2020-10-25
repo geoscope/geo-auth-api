@@ -3,13 +3,13 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BLB.Api.Net.Interfaces;
-using BLB.Shared.Net.Models;
+using geo_auth_api.Interfaces;
+using geo_auth_shared.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace BLB.Api.Net.Middleware
+namespace geo_auth_api.Middleware
 {
     public class JwtMiddleware
     {
