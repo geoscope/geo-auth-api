@@ -9,7 +9,7 @@ namespace geo_auth_api.Services
     {
         private readonly IDistributedCache cache;
 
-        CachingService(IDistributedCache _cache)
+        public CachingService(IDistributedCache _cache)
         {
             cache = _cache;
         }

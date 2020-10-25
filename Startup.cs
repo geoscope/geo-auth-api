@@ -106,7 +106,10 @@ namespace geo_auth_api
 
             services.AddSingleton<ISecurityHelper, SecurityHelper>();
 
+            services.AddScoped<ICachingService, CachingService>();
+
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRoleRepository, UserRoleRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddScoped<IHydrator<geo_auth_data.models.domain.User, geo_auth_data.models.dto.User>, UserToUserDtoHydrator>();
